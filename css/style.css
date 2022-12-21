@@ -50,20 +50,68 @@ section{
     margin: 0 auto;
 }
 .cards{
-    margin: 30px 0;
     gap: 8px;
+    margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
 }
 .card{
     width: calc(100% / 3 - 16px);
     background-color: lightblue;
+    text-align: center;
+    border-radius: 15px;
 }
 .big{
-    width: 64%;
+    width: calc(100% / 3 * 2 - 16px);
     display: flex;
+    border-radius: 15px;
+    background-color: lightblue;
 }
+.big-button{
+    background-color: lightskyblue;
+    text-decoration: none;
+    padding: 6px 11px;
+    margin: 20px 10px;
+    color: white;
+    border-radius: 15px;
+}
+
+/*SECONDO BLOCCO*/
+.column{
+    width: calc(100% / 2);
+}
+
+/*TERZO BLOCCO*/
+.row{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    border-radius: 15px;
+    background-color: plum;
+}
+.team{
+    height: 10rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-color: grey;
+
+}
+
+/*QUARTO BLOCCO*/
+.big-number>p{
+    font-size: 50px;
+}
+
+/*ULTIMO BLOCCO*/
+.about-us-1{
+    width: 60%;
+}
+.about-us-2{
+    width: 35%;
+}
+
+/*FOOTER*/
 
 
 
