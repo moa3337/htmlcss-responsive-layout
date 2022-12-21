@@ -1,0 +1,70 @@
+/*style reset*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img,svg,picture,video {
+    width: 100%;
+}
+
+/*header*/
+header{
+    background-color: rgb(0, 157, 255);
+    
+}
+nav {
+    height: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav>ul>li{
+    padding: 0 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+.small-button {
+    background-color: white;
+    text-decoration: none;
+    padding: 6px 11px;
+    color: black;
+    border-radius: 15px;
+}
+
+/*******************************
+************* MAIN ************/
+
+/*PRIMO BLOCOO*/
+section{
+
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.cards{
+    margin: 30px 0;
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card{
+    width: calc(100% / 3 - 16px);
+    background-color: lightblue;
+}
+.big{
+    width: 64%;
+    display: flex;
+}
+
+
+
+
