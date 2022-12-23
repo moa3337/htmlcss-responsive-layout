@@ -59,9 +59,9 @@ section:nth-of-type(even){
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    
     justify-content: center;
 }
+
 .card{
     width: calc(100% / 3 - 8px);
     background-color: #B5DDFF;
@@ -316,34 +316,21 @@ footer>.container>.about-us-1>a{
     .menu-burger>li>.material-icons {
         display: block;
     }
-}
-@media screen and (max-width:768px) {
-    .container {
-        width: 100%;
-    }
-
     .big {
         display: block;
     }
-}
-@media screen and (max-width:768px) {
     .column {
         width: 100%;
     }
-
     .cards {
-        padding: 10px;
+        padding: 25px;
     }
-
     .planning>.container>.cards>.card {
         width: 100%;
     }
-
     .column>h2 {
         font-size: 40px;
     }
-}
-@media screen and (max-width:768px) {
     .second-cards>.container>.cards>.card {
         width: calc(100% / 2 - 8px);
     }
