@@ -11,7 +11,6 @@ img,svg,picture,video {
 /*header*/
 header{
     background-color: rgb(0, 157, 255);
-    
 }
 nav {
     height: 60px;
@@ -37,13 +36,18 @@ nav>ul>li>a{
     color: black;
     border-radius: 15px;
 }
+.menu-burger>li>.material-icons{
+    font-size: 25px;
+    color: white;
+    display: none;
+}
 
 /*******************************
 ************* MAIN ************/
 
-/*PRIMO BLOCOO*/
-section{
-
+/*PRIMO BLOCOO (CARD)*/
+section:nth-of-type(even){
+    background-color: #9792E4;
 }
 .container{
     max-width: 900px;
@@ -51,68 +55,326 @@ section{
 }
 .cards{
     gap: 8px;
-    margin: 30px 0;
+    margin: 30px 0 70px 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
+    
     justify-content: center;
 }
 .card{
-    width: calc(100% / 3 - 16px);
-    background-color: lightblue;
+    width: calc(100% / 3 - 8px);
+    background-color: #B5DDFF;
     text-align: center;
     border-radius: 15px;
 }
 .big{
-    width: calc(100% / 3 * 2 - 16px);
+    width: calc(100% / 3 * 2 - 8px);
     display: flex;
-    border-radius: 15px;
-    background-color: lightblue;
+    text-align: initial;
+}
+.part-sx>h4{
+    padding: 30px 0 0 10px;
+    color: #0084FD;
+}
+.part-sx>p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #5A6E7F;
+    line-height: 22px;
+    padding: 30px 0 30px 10px;
+}
+.part-dx>img{
+    width: 80%;
+    padding-top: 55px;
+}
+.card>h4{
+    color: #0084FD;
+}
+.card>p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #5A6E7F;
+    line-height: 22px;
+    padding: 30px 0 30px 10px;
 }
 .big-button{
-    background-color: lightskyblue;
+    background-color: #0084FD;
     text-decoration: none;
-    padding: 6px 11px;
+    border-radius: 18px;
+    padding: 10px 40px;
     margin: 20px 10px;
+    font-size: 12px;
     color: white;
-    border-radius: 15px;
+}
+.material-icons{
+    padding: 20px;
+    font-size: 75px;
+    color: #0084FD;
 }
 
-/*SECONDO BLOCCO*/
+/*SECONDO BLOCCO (PLANNING)*/
 .column{
     width: calc(100% / 2);
+    text-align: initial;
+}
+.column>img{
+    width: 75%;
+    padding: 70px 0;
+}
+.column>h2{
+    color: white;
+    padding: 30px 0;
+}
+.column>p{
+    font-size: 12px;
+    padding: 30px 0;
+    color: white;
+    line-height: 20px;
+}
+.card>img{
+    width: 70%;
+    padding: 20px;
+}
+.planning>.container>.cards>.card{
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+.card>h3{
+    color: black;
+}
+.planning>.container>.cards>.card>p{
+    color: black;
+    padding: 20px 0;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #9792E4;
+}
+.arrow>.material-icons{
+    font-size: 16px;
+    color: black;
 }
 
-/*TERZO BLOCCO*/
+/*TERZO BLOCCO (IL TEAM)*/
+.cards.the-team>h2{
+    text-align: center;
+}
+.cards.the-team>.team>p{
+    text-align: center;
+}
 .row{
     width: 100%;
     margin: 10px 0;
+    padding: 10px;
     display: flex;
+    align-items: center;
     border-radius: 15px;
-    background-color: plum;
+    background-color: #9792E4;
 }
-.team{
-    height: 10rem;
-    width: 20rem;
+.team-name{
+    width: 45%;
+    aspect-ratio: 1;
     border-radius: 50%;
-    background-color: grey;
-
 }
+.team-name>img{
+    height: 98%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.cards>h2{
+    font-size: 35px;
+    color: #9792E4;
+    padding: 20px;
+}
+.row>p{
+    color: white;
+    padding: 10px;
+}
+.row>h5{}
 
-/*QUARTO BLOCCO*/
+/*QUARTO BLOCCO (CARD 2)*/
+.second-cards>.container>.cards{
+    padding-bottom: 40px;
+}
 .big-number>p{
-    font-size: 50px;
+    font-size: 55px;
+    color: #9792E4;
+    padding: 25px 15px;
+    text-align: initial;
+}
+.container>h2{
+    font-size: 35px;
+    padding: 50px 0 30px 0;
+    color: white;
+    text-align: center;
+}
+.second-cards>.container>.cards>.card{
+    background-color: white;
+}
+.second-cards>.container>.cards>.card>h4{
+    color: #9792E4;
+    padding: 0 25px;
+    text-align: initial;
+}
+.second-cards>.container>.cards>.card>p{
+    line-height: 23px;
+    padding: 30px 25px;
+    text-align: initial;
+}
+.second-cards>.container>.cards>.card>p>a{
+    background-color: #9792E4;
+    text-align: initial;
+    margin: 0;
 }
 
 /*ULTIMO BLOCCO*/
+.last>.container>.cards {
+    align-items: stretch;
+}
 .about-us-1{
     width: 60%;
 }
 .about-us-2{
     width: 35%;
 }
+.about-us-1>h2{
+    font-size: 50px;
+    color: #9792E4;
+    padding-bottom: 30px;
+}
+.about-us-1>p{
+    line-height: 33px;
+    padding: 20px 40px 20px 0;
+}
+.about-us-2>h4{
+    line-height: 30px;
+    color: #9792E4;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.about-us-2>a{
+    background: #9792E4;
+    margin: 0;
+}
 
 /*FOOTER*/
+footer>.container>.about-us-1{
+    text-align: center;
+    margin: 0 auto;
+}
+footer>.container>.about-us-1>h3{
+    color: white;
+    font-size: 35px;
+    padding: 40px;
+}
+footer>.container>.about-us-1>h2{
+    color: orange;
+    font-size: 65px;
+}
+footer>.container>.about-us-1>p{
+    color: white;
+    padding: 15px 0 40px 0;
+}
+footer>.container>.about-us-1>a{
+    background-color: white;
+    color: #9792E4;
+}
+.policy>p,a{
+    font-size: 12px;
+    color: white;
+    padding: 30px 0;
+}
+.black{
+    background-color: black;
+}
+.black{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 30px;
+}
 
+/*******************************
+***** MEDIA QUERYES TABLET ****/
+@media screen and (max-width:768px) {
+    .container {
+        width: 100%;
+    }
 
+    .menu-burger>li>a {
+        display: none;
+    }
 
+    .menu-burger>li>.material-icons {
+        display: block;
+    }
+}
+@media screen and (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+
+    .big {
+        display: block;
+    }
+}
+@media screen and (max-width:768px) {
+    .column {
+        width: 100%;
+    }
+
+    .cards {
+        padding: 10px;
+    }
+
+    .planning>.container>.cards>.card {
+        width: 100%;
+    }
+
+    .column>h2 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:768px) {
+    .second-cards>.container>.cards>.card {
+        width: calc(100% / 2 - 8px);
+    }
+}
+
+/*******************************
+***** MEDIA QUERYES MOBILE ****/
+ @media screen and (max-width:480px) {
+     .container{
+        width: 100%;
+    }
+    .container>.cards>.card {
+        width: 100%;
+    }
+    .second-cards>.container>.cards>.card {
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row>p{
+        text-align: center;
+    }
+    .last>.container>.cards{
+        flex-direction: column;
+    }
+    .last>.container>.cards>.about-us-1{
+        width: 100%;
+    }
+    .last>.container>.cards>.about-us-2{
+        width: 100%;
+    }
+ }
 
